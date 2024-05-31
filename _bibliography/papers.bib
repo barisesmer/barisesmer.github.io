@@ -1,113 +1,141 @@
 ---
 ---
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{esmerApproximateMonotoneLocal2023,
+  title = {Approximate {{Monotone Local Search}} for {{Weighted Problems}}},
+  abbr={IPEC 2023},
+  bibtex_show=true,   
+  arxiv={2308.15306},
+  author = {Esmer, Bar{\i}{\c s} Can and Kulik, Ariel and Marx, D{\'a}niel and Neuen, Daniel and Sharma, Roohani},
+  year = {2023},
+  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  doi = {10.4230/LIPIcs.IPEC.2023.17},
+  urldate = {2024-03-27},
+  abstract = {In a recent work, Esmer et al. describe a simple method - Approximate Monotone Local Search - to obtain exponential approximation algorithms from existing parameterized exact algorithms, polynomial-time approximation algorithms and, more generally, parameterized approximation algorithms. In this work, we generalize those results to the weighted setting. More formally, we consider monotone subset minimization problems over a weighted universe of size n (e.g., Vertex Cover, d-Hitting Set and Feedback Vertex Set). We consider a model where the algorithm is only given access to a subroutine that finds a solution of weight at most {$\alpha$} {$\cdot$} W (and of arbitrary cardinality) in time c{\textasciicircum}k {$\cdot$} n{\textasciicircum}\{{$O$}(1)\} where W is the minimum weight of a solution of cardinality at most k. In the unweighted setting, Esmer et al. determine the smallest value d for which a {$\beta$}-approximation algorithm running in time d{$^n$} {$\cdot$} n{\textasciicircum}\{{$O$}(1)\} can be obtained in this model. We show that the same dependencies also hold in a weighted setting in this model: for every fixed {$\varepsilon$} {$>$} 0 we obtain a {$\beta$}-approximation algorithm running in time {$O$}((d+{$\varepsilon$}){$^n$}), for the same d as in the unweighted setting.  Similarly, we also extend a {$\beta$}-approximate brute-force search (in a model which only provides access to a membership oracle) to the weighted setting. Using existing approximation algorithms and exact parameterized algorithms for weighted problems, we obtain the first exponential-time {$\beta$}-approximation algorithms that are better than brute force for a variety of problems including Weighted Vertex Cover, Weighted d-Hitting Set, Weighted Feedback Vertex Set and Weighted Multicut.},
+  copyright = {https://creativecommons.org/licenses/by/4.0/legalcode},
+  booktitle =	{18th International Symposium on Parameterized and Exact Computation (IPEC 2023)},  
+  langid = {english}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+
+@incollection{canesmerOptimallyRepurposingExisting2024,
+  title = {Optimally Repurposing Existing Algorithms to Obtain Exponential-Time Approximations},
+  booktitle = {Proceedings of the 2024 {{Annual ACM-SIAM Symposium}} on {{Discrete Algorithms}} ({{SODA}})},
+  author = {Can Esmer, Bar{\i}{\c s} and Kulik, Ariel and Marx, D{\'a}niel and Neuen, Daniel and Sharma, Roohani},
+  year = {2024},
+  bibtex_show=true,   
+  month = jan,
+  series = {Proceedings},
+  pages = {314--345},
+  publisher = {{Society for Industrial and Applied Mathematics}},
+  doi = {10.1137/1.9781611977912.13},
+  urldate = {2024-03-27},
+  selected={true},
+  abbr={SODA 2024},
+  arxiv={2306.15331},
+  abstract = {The goal of this paper is to understand how exponential-time approximation algorithms can be obtained from existing polynomial-time approximation algorithms, existing parameterized exact algorithms, and existing parameterized approximation algorithms. More formally, we consider a monotone subset minimization problem over a universe of size n (e.g., VERTEX COVER or FEEDBACK VERTEX Set). We have access to an algorithm that finds an {$\alpha$}-approximate solution in time ck {$\cdot$} nO(1) if a solution of size k exists (and more generally, an extension algorithm that can approximate in a similar way if a set can be extended to a solution with k further elements). Our goal is to obtain a dn {$\cdot$} nO(1) time {$\beta$}-approximation algorithm for the problem with d as small as possible. That is, for every fixed {$\alpha$},c,{$\beta$} {$\geq$} 1, we would like to determine the smallest possible d that can be achieved in a model where our problem-specific knowledge is limited to checking the feasibility of a solution and invoking the {$\alpha$}-approximate extension algorithm. Our results completely resolve this question: 1. For every fixed {$\alpha$}, c, {$\beta$} {$\geq$} 1, a simple algorithm (``approximate monotone local search'') achieves the optimum value of d. 2. Given {$\alpha$}, c, {$\beta$} {$\geq$} 1, we can efficiently compute the optimum d up to any precision {$\varepsilon$} {$>$} 0. Our technique gives novel results for a wide range of problems including FEEDBACK VERTEX Set, DIRECTED Feedback Vertex Set, Odd Cycle Traversal and Partial Vertex Cover. The monotone local search algorithm we use is a simple adaptation of [Fomin et al., J. ACM 2019, Esmer et al., ESA 2022, Gaspers and Lee, ICALP 2017]. Still, attaining the above results required us to frame the result in a different way, and overcome a major technical challenge. First, we introduce an oracle based computational model which allows for a simple derivation of lower bounds that, unexpectedly, show that the running time of the monotone local search algorithm is optimal. Second, while it easy to express the running time of the monotone local search algorithm in various forms, it is unclear how to actually numerically evaluate it for given values of {$\alpha$}, {$\beta$} and c. We show how the running time of the algorithm can be evaluated via a convex analysis of a continuous max-min optimization problem, overcoming the limitations of previous approaches to the {$\alpha$} = {$\beta$} case [Fomin et al., J. ACM 2019, Esmer et al., ESA 2022, Gaspers and Lee, ICALP 2017]. * The full version of the paper can be accessed at https://arxiv.org/abs/2306.15331. Research supported by the European Research Council (ERC) consolidator grant No. 725978 SYSTEMATICGRAPH.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{esmerComputingGeneralizedConvolutions2024,
+  title = {Computing {{Generalized Convolutions Faster Than Brute Force}}},
+  author = {Esmer, Bar{\i}{\c s} Can and Kulik, Ariel and Marx, D{\'a}niel and Schepper, Philipp and W{\k e}grzycki, Karol},
+  year = {2024},
+  month = jan,
+  journal = {Algorithmica},
+  volume = {86},
+  number = {1},
+  pages = {334--366},
+  issn = {1432-0541},
+  doi = {10.1007/s00453-023-01176-2},
+  abbr={Algorithmica},
+  selected = true,
+  bibtex_show=true, 
+  arxiv={2209.01623},  
+  urldate = {2024-03-27},
+  abstract = {In this paper, we consider a general notion of convolution. Let \$\$D\$\$be a finite domain and let \$\$D{\textasciicircum}n\$\$be the set of n-length vectors (tuples) of \$\$D\$\$. Let \$\$f :D{\textbackslash}times D{\textbackslash}rightarrow D\$\$be a function and let \$\${\textbackslash}oplus \_f\$\$be a coordinate-wise application of f. The \$\$f\$\$-Convolution of two functions \$\$g,h :D{\textasciicircum}n {\textbackslash}rightarrow {\textbackslash}\{-M,{\textbackslash}ldots ,M{\textbackslash}\}\$\$is \$\${\textbackslash}begin\{aligned\} (g {\textbackslash}mathbin \{{\textbackslash}circledast \_\{f\}\}h)({\textbackslash}textbf\{v\}) \{:\}\{=\}{\textbackslash}sum \_\{{\textbackslash}begin\{array\}\{c\} {\textbackslash}textbf\{v\}\_g,{\textbackslash}textbf\{v\}\_h {\textbackslash}in D{\textasciicircum}n{\textbackslash}{\textbackslash} {\textbackslash}text \{s.t. \} {\textbackslash}textbf\{v\}= {\textbackslash}textbf\{v\}\_g {\textbackslash}oplus \_f {\textbackslash}textbf\{v\}\_h {\textbackslash}end\{array\}\} g({\textbackslash}textbf\{v\}\_g) {\textbackslash}cdot h({\textbackslash}textbf\{v\}\_h) {\textbackslash}end\{aligned\}\$\$(g⊛fh)(v):={$\sum$}vg,vh{$\in$}Dns.t.v=vg{$\oplus$}fvhg(vg){$\cdot$}h(vh)for every \$\${\textbackslash}textbf\{v\}{\textbackslash}in D{\textasciicircum}n\$\$. This problem generalizes many fundamental convolutions such as Subset Convolution, XOR Product, Covering Product or Packing Product, etc. For arbitrary function f and domain \$\$D\$\$we can compute \$\$f\$\$-Convolution via brute-force enumeration in \$\${\textbackslash}widetilde\{\{{\textbackslash}mathcal \{O\}\}\}({\textbar}D{\textbar}{\textasciicircum}\{2n\} {\textbackslash}cdot {\textbackslash}textrm\{polylog\}(M))\$\$time. Our main result is an improvement over this naive algorithm. We show that \$\$f\$\$-Convolution can be computed exactly in \$\${\textbackslash}widetilde\{\{{\textbackslash}mathcal \{O\}\}\}( (c {\textbackslash}cdot {\textbar}D{\textbar}{\textasciicircum}2){\textasciicircum}\{n\} {\textbackslash}cdot {\textbackslash}textrm\{polylog\}(M))\$\$for constant \$\$c \{:\}\{=\}3/4\$\$when \$\$D\$\$has even cardinality. Our main observation is that a cyclic partition of a function \$\$f :D{\textbackslash}times D{\textbackslash}rightarrow D\$\$can be used to speed up the computation of \$\$f\$\$-Convolution, and we show that an appropriate cyclic partition exists for every f. Furthermore, we demonstrate that a single entry of the \$\$f\$\$-Convolution can be computed more efficiently. In this variant, we are given two functions \$\$g,h :D{\textasciicircum}n {\textbackslash}rightarrow {\textbackslash}\{-M,{\textbackslash}ldots ,M{\textbackslash}\}\$\$alongside with a vector \$\${\textbackslash}textbf\{v\}{\textbackslash}in D{\textasciicircum}n\$\$and the task of the \$\$f\$\$-Query problem is to compute integer \$\$(g {\textbackslash}mathbin \{{\textbackslash}circledast \_\{f\}\}h)({\textbackslash}textbf\{v\})\$\$. This is a generalization of the well-known Orthogonal Vectors problem. We show that \$\$f\$\$-Query can be computed in \$\${\textbackslash}widetilde\{\{{\textbackslash}mathcal \{O\}\}\}({\textbar}D{\textbar}{\textasciicircum}\{{\textbackslash}frac\{{\textbackslash}omega \}\{2\} n\} {\textbackslash}cdot {\textbackslash}textrm\{polylog\}(M))\$\$time, where \$\${\textbackslash}omega {\textbackslash}in [2,2.372)\$\$is the exponent of currently fastest matrix multiplication algorithm.},
+  langid = {english},
+  keywords = {Algorithm design techniques,Fast Fourier Transform,Fast Subset Convolution,Generalized Convolution,Orthogonal Vectors,Parameterized complexity and exact algorithms,Theory of computation}
+}
+	
+
+@inproceedings{EsmerESA22,
+	abbr={ESA 2022},
+	selected = true,
+        bibtex_show=true,
+	arxiv={2206.13481},
+	address = {Berlin/Potsdam, Germany},
+	author = {Esmer, Bari{\c s} Can and Kulik, Ariel and Marx, D{\'a}niel and Neuen, Daniel and Sharma, Roohani},
+	booktitle = {30th Annual European Symposium on Algorithms (ESA 2022)},
+	doi = {10.4230/LIPIcs.ESA.2022.50},
+	editor = {Chechik, Shiri and Navarro, Gonzalo and Rotenberg, Eva and Herman, Grzegorz},
+	eid = {50},
+	isbn = {978-3-95977-247-1},
+	issn = {1868-8969},
+	language = {eng},
+	marginalmark = {$\bullet$},
+	pages = {1--19},
+	publisher = {Schloss Dagstuhl},
+	series = {Leibniz International Proceedings in Informatics},
+	title = {Faster Exponential-Time Approximation Algorithms Using Approximate Monotone Local Search},
+	url = {urn:nbn:de:0030-drops-169887; https://drops.dagstuhl.de/opus/volltexte/2022/16988/},
+	volume = {244},
+	year = {2022}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  selected={true}
+
+
+
+@misc{esmerFundamentalProblemsBoundedTreewidth2024,
+  abbr={arXiv},	
+  title = {Fundamental {{Problems}} on {{Bounded-Treewidth Graphs}}: {{The Real Source}} of {{Hardness}}},
+  shorttitle = {Fundamental {{Problems}} on {{Bounded-Treewidth Graphs}}},
+  author = {Esmer, Bar{\i}{\c s} Can and Focke, Jacob and Marx, D{\'a}niel and Rz{\k a}{\.z}ewski, Pawe{\l}},
+  year = {2024},
+  bibtex_show=true,   
+  month = feb,
+  number = {arXiv:2402.07331},
+  eprint = {2402.07331},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-03-27},
+  abstract = {It is known for many algorithmic problems that if a tree decomposition of width \$t\$ is given in the input, then the problem can be solved with exponential dependence on \$t\$. A line of research by Lokshtanov, Marx, and Saurabh [SODA 2011] produced lower bounds showing that in many cases known algorithms achieve the best possible exponential dependence on \$t\$, assuming the SETH. The main message of our paper is showing that the same lower bounds can be obtained in a more restricted setting: a graph consisting of a block of \$t\$ vertices connected to components of constant size already has the same hardness as a general tree decomposition of width \$t\$. Formally, a \$({\textbackslash}sigma,{\textbackslash}delta)\$-hub is a set \$Q\$ of vertices such that every component of \$Q\$ has size at most \${\textbackslash}sigma\$ and is adjacent to at most \${\textbackslash}delta\$ vertices of \$Q\$. \${\textbackslash}bullet\$ For every \${\textbackslash}epsilon{$>$} 0\$, there are \${\textbackslash}sigma,{\textbackslash}delta{$>$} 0\$ such that Independent Set/Vertex Cover cannot be solved in time \$(2-{\textbackslash}epsilon){\textasciicircum}p{\textbackslash}cdot n\$, even if a \$({\textbackslash}sigma,{\textbackslash}delta)\$-hub of size \$p\$ is given in the input, assuming the SETH. This matches the earlier tight lower bounds parameterized by the width of the tree decomposition. Similar tight bounds are obtained for Odd Cycle Transversal, Max Cut, \$q\$-Coloring, and edge/vertex deletions versions of \$q\$-Coloring. \${\textbackslash}bullet\$ For every \${\textbackslash}epsilon{$>$}0\$, there are \${\textbackslash}sigma,{\textbackslash}delta{$>$} 0\$ such that Triangle-Partition cannot be solved in time \$(2-{\textbackslash}epsilon){\textasciicircum}p{\textbackslash}cdot n\$, even if a \$({\textbackslash}sigma,{\textbackslash}delta)\$-hub of size \$p\$ is given in the input, assuming the Set Cover Conjecture (SCC). In fact, we prove that this statement is equivalent to the SCC, thus it is unlikely that this could be proved assuming the SETH. \${\textbackslash}bullet\$ For Dominating Set, we can prove a non-tight lower bound ruling out \$(2-{\textbackslash}epsilon){\textasciicircum}p{\textbackslash}cdot n{\textasciicircum}\{O(1)\}\$ algorithms, assuming either the SETH or the SCC, but this does not match the \$3{\textasciicircum}p{\textbackslash}cdot n{\textasciicircum}\{O(1)\}\$ upper bound.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computational Complexity,Computer Science - Data Structures and Algorithms}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@misc{esmerListHomomorphismsDeleting2024,
+  abbr={arXiv},	
+  title = {List Homomorphisms by Deleting Edges and Vertices: Tight Complexity Bounds for Bounded-Treewidth Graphs},
+  shorttitle = {List Homomorphisms by Deleting Edges and Vertices},
+  author = {Esmer, Bar{\i}{\c s} Can and Focke, Jacob and Marx, D{\'a}niel and Rz{\k a}{\.z}ewski, Pawe{\l}},
+  year = {2024},
+  bibtex_show=true,   
+  month = feb,
+  number = {arXiv:2210.10677},
+  eprint = {2210.10677},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-03-27},
+  abstract = {The goal of this paper is to investigate a family of optimization problems arising from list homomorphisms, and to understand what the best possible algorithms are if we restrict the problem to bounded-treewidth graphs. For a fixed \$H\$, the input of the optimization problem LHomVD(\$H\$) is a graph \$G\$ with lists \$L(v)\$, and the task is to find a set \$X\$ of vertices having minimum size such that \$(G-X,L)\$ has a list homomorphism to \$H\$. We define analogously the edge-deletion variant LHomED(\$H\$). This expressive family of problems includes members that are essentially equivalent to fundamental problems such as Vertex Cover, Max Cut, Odd Cycle Transversal, and Edge/Vertex Multiway Cut. For both variants, we first characterize those graphs \$H\$ that make the problem polynomial-time solvable and show that the problem is NP-hard for every other fixed \$H\$. Second, as our main result, we determine for every graph \$H\$ for which the problem is NP-hard, the smallest possible constant \$c\_H\$ such that the problem can be solved in time \$c{\textasciicircum}t\_H{\textbackslash}cdot n{\textasciicircum}\{O(1)\}\$ if a tree decomposition of \$G\$ having width \$t\$ is given in the input.Let \$i(H)\$ be the maximum size of a set of vertices in \$H\$ that have pairwise incomparable neighborhoods. For the vertex-deletion variant LHomVD(\$H\$), we show that the smallest possible constant is \$i(H)+1\$ for every \$H\$. The situation is more complex for the edge-deletion version. For every \$H\$, one can solve LHomED(\$H\$) in time \$i(H){\textasciicircum}t{\textbackslash}cdot n{\textasciicircum}\{O(1)\}\$ if a tree decomposition of width \$t\$ is given. However, the existence of a specific type of decomposition of \$H\$ shows that there are graphs \$H\$ where LHomED(\$H\$) can be solved significantly more efficiently and the best possible constant can be arbitrarily smaller than \$i(H)\$. Nevertheless, we determine this best possible constant and (assuming the SETH) prove tight bounds for every fixed \$H\$.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computational Complexity,Computer Science - Data Structures and Algorithms}
+}	
+
+
+@inproceedings{esmerApproximateBlockSparse2022,
+  title = {On (1 + {$\epsilon$})-{{Approximate Block Sparse Recovery}}},
+  booktitle = {2022 {{IEEE International Symposium}} on {{Information Theory}} ({{ISIT}})},
+  author = {Esmer, Bar{\i}{\c s} Can and Nakos, Vasileios},
+  year = {2022},
+  abbr={ISIT 2022},
+  bibtex_show=true,   
+  month = jun,
+  pages = {1815--1820},
+  issn = {2157-8117},
+  doi = {10.1109/ISIT50566.2022.9834705},
+  urldate = {2024-03-27},
+  abstract = {Learning approximately block sparse vectors using a small number of linear measurements is a standard task in the sparse recovery/compressed sensing literature. Schemes achieving a constant factor approximation are long known, e.g. using model-based RIP. We give a new scheme achieving (1+ {$\epsilon$}) approximation, which runs in near linear time in the length of the vector and is likely to be optimal up to constant factors. As an intriguing side result, we obtain the simplest known scheme measurement-optimal {$\ell$}2/{$\ell$}2 sparse recovery scheme recorded in the literature. The main component of our algorithm is a subtle variant of the classic COUNTSKETCH data structure where the random signs are substituted by Gaussians and the number of repetitions (rows) is tuned to smaller than usual.},
+  keywords = {Approximation algorithms,Data structures,Information theory,model based sparse recovery,Sensors,sparse recovery,Standards,Task analysis}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}

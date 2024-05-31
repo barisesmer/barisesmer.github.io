@@ -2,24 +2,27 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <b>Doctoral Researcher</b> @ <a href='https://cispa.de/en'>CISPA Helmholtz Center for Information Security</a>, <b>Ph.D. Student</b> @ <a href='https://saarland-informatics-campus.de/en/'>Saarland University</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Work Address: Kaiserstraße 21, 66386 St. Ingbert (Germany)</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
+teaching: true
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My name is Barış Can Esmer. Currently, I am a Ph.D. student at Saarland University (and doctoral researcher at CISPA) advised by [Dániel Marx](https://cispa.de/en/people/c01dama/). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Nowadays, my research interests are parameterized complexity, fine-grained lower bounds, and (parameterized) approximation algorithms, though I am interested in theoretical computer science in general.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I received my Master’s degree in Mathematics and Computer Science at Saarland University in 2021, and before that, I completed my undergraduate studies at Boğaziçi University, Turkey, in 2019.
+
+In my spare time, I usually travel, go swimming, hit the gym, (try to) play <a href='https://en.wikipedia.org/wiki/Oud'>the oud</a> or play computer games. 
+
+

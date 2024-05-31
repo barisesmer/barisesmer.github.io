@@ -1,0 +1,34 @@
+<div class="teaching">
+  {% if site.data.teaching != blank %}
+    {% assign teaching_size = site.data.teaching | size %}
+    <div
+      class="table-responsive"
+      {% if include.limit and site.teaching.scrollable and teaching_size > 3 %}
+        style="max-height: 60vw"
+      {% endif %}
+    >
+      <table class="table table-sm table-borderless">
+        {% assign teaching = site.data.teaching %}
+        {% if include.limit and site.teaching.limit %}
+          {% assign teaching_limit = site.teaching.limit %}
+        {% else %}
+          {% assign teaching_limit = teaching_size %}
+        {% endif %}
+        {% for course in teaching limit: teaching_limit %}
+          <tr>
+            <th scope="row" style="width: 20%">{{ course.year }}</th>
+            <td>
+              <strong>Course Name: </strong>{{ course.course_name }}<br>
+	      <strong>Role: </strong>{{ course.role }}<br>
+	      <strong>Instructor: </strong><a href="{{ course.instructor_url }}" target="_blank">{{ course.instructor }}</a><br>	      
+	      <strong>Institution: </strong>{{ course.institution }}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No courses to display...</p>
+  {% endif %}
+</div>
+

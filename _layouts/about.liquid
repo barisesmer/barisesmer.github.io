@@ -40,6 +40,15 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Teaching -->
+    {% if page.teaching %}
+      <h2>
+        <a href="{{ '/teaching/' | relative_url }}" style="color: inherit">Teaching</a>
+      </h2>
+      {% include teaching.liquid limit=true %}
+    {% endif %}
+    
+
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
